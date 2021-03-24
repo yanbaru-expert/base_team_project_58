@@ -8,7 +8,6 @@ class MessagesController < ApplicationController
   end
 
   def create
-    # Strong Parameter の記述
     Message.create(message_params)
   end
 
