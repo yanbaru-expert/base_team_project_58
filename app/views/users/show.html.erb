@@ -1,2 +1,8 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>ユーザー 詳細</h1>
+<%= form_with model: @user, local: true do |f| %>
+<p>名前： <%= @user.title %></p>
+<p>年齢： <%= @user.content %>
+
+<%= link_to "一覧画面へ", users_path %>
+
+<% end %>
